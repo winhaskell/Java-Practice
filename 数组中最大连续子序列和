@@ -1,0 +1,17 @@
+int maxsequence(int a[], int length)
+{
+    int maxsum, max;
+    maxsum = max = a[0];  
+    for (int i=1; i<length; i++) 
+    {
+        if (max <= 0)
+            max = a[i];
+        else
+            max += a[i];
+        if (max > maxsum) 
+        {
+            maxsum = max;  
+        }
+    }
+    return maxsum;
+}
