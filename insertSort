@@ -1,0 +1,11 @@
+public class InsertSort {
+    public static void insertSort(int[] a) {
+     
+    }
+
+    public static void main(String[] args) {
+        int a[] = {  };
+        insertSort(a);
+        System.out.println(Arrays.toString(a));
+    }
+} 
