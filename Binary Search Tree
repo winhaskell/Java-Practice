@@ -4,3 +4,15 @@ https://blog.csdn.net/sheepmu/article/details/38407221
 https://www.cnblogs.com/gaochundong/p/binary_search_tree.html
 
 
+public class binaryTreeNode {  
+    public int keyValue;     
+    public binaryTreeNode leftNode; 
+    public binaryTreeNode rightNode; 
+    public binaryTreeNode(){}  
+    public binaryTreeNode(int Key)
+    {  
+        this.keyValue = Key;  
+    }  
+}  
+
+
