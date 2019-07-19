@@ -4,18 +4,22 @@ https://blog.csdn.net/sheepmu/article/details/38407221
 https://www.cnblogs.com/gaochundong/p/binary_search_tree.html
 https://www.cnblogs.com/Xieyang-blog/p/9111962.html
 https://blog.csdn.net/sheepmu/article/details/38407221
+https://ichrisking.github.io/2016/12/12/bin-tree/
+
 
 public class binaryTreeNode {  
-    public int keyValue;     
+    public int data;     
     public binaryTreeNode leftNode; 
     public binaryTreeNode rightNode; 
     public binaryTreeNode(){}  
     public binaryTreeNode(int Key)
     {  
-        this.keyValue = Key;  
+        this.data = Key;  
     }  
 }  
 
 
 二叉搜索树 查询节点 添加节点 删除节点 遍历 最大值 最小值 
+
+
 
