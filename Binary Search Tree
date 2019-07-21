@@ -59,6 +59,28 @@ The left and right subtree each must also be a binary search tree.
 
 
 
+----------------------------------------------
+
+
+Binary Tree to Binary Search Tree Conversion
+Given a Binary Tree, convert it to a Binary Search Tree. 
+The conversion must be done in such a way that keeps the original structure of Binary Tree.
+
+Examples.
+
+Input:
+          100
+         /  \
+        1    7
+       / \
+      8   6
+
+Output:
+          8
+         /  \
+        6    100
+       / \
+      1   7
 
 
 
