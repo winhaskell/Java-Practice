@@ -5,6 +5,7 @@ https://www.cnblogs.com/gaochundong/p/binary_search_tree.html
 https://www.cnblogs.com/Xieyang-blog/p/9111962.html
 https://blog.csdn.net/sheepmu/article/details/38407221
 https://ichrisking.github.io/2016/12/12/bin-tree/
+https://blog.csdn.net/Evankaka/article/details/48088241 
 
 
 public class binaryTreeNode {  
@@ -57,6 +58,11 @@ The left and right subtree each must also be a binary search tree.
   /   \     \
  2    107   560
 
+二叉排序树(Binary Sort Tree)又称二叉查找(搜索)树(Binary Search Tree)。
+定义为：二叉排序树或者是空树，或者是满足如下性质的二叉树：
+       若它的左子树非空，则左子树上所有结点的值均小于根结点的值；
+       若它的右子树非空，则右子树上所有结点的值均大于根结点的值；
+       左、右子树也是一棵二叉排序树。
 
 
 ----------------------------------------------
