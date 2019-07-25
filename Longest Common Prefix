@@ -18,7 +18,8 @@ class Solution {
             int j = 0;
             String currentString = strs[i];
             
-            while (j < longestCommonPrefix.length() && j < currentString.length() && longestCommonPrefix.charAt(j) == currentString.charAt(j)) {
+            while (j < longestCommonPrefix.length() && j < currentString.length() 
+            && longestCommonPrefix.charAt(j) == currentString.charAt(j)) {
                 j++;
             }
             
