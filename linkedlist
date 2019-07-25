@@ -8,21 +8,7 @@ class LinkedList {
             next = null; 
         } 
     } 
-
-    Node reverse(Node node) { 
-        Node prev = null; 
-        Node current = node; 
-        Node next = null; 
-        while (current != null) { 
-            next = current.next; 
-            current.next = prev; 
-            prev = current; 
-            current = next; 
-        } 
-        node = prev; 
-        return node; 
-    } 
-   
+ 
     void printList(Node node) { 
         while (node != null) { 
             System.out.print(node.data + " "); 
@@ -30,4 +16,9 @@ class LinkedList {
         } 
     } 
   
+  
+  
+快慢指针，让块指针先进入环，那么快慢指针迟早会在环中相遇
+https://www.cnblogs.com/dancingrain/p/3405197.html
+https://www.cnblogs.com/grandyang/p/4137187.html
  
