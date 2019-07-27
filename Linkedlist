@@ -4,3 +4,9 @@ node of loop in a linked list
 Remove Nth Node From End of List
 
 
+https://docs.oracle.com/en/java/javase/12/books.html
+
+
+split()函数是根据参数如",", "-", " "等, 分割String字符串 
+trim() 函数是去掉String字符串的首尾空格
+https://docs.oracle.com/javase/6/docs/api/java/lang/String.html
