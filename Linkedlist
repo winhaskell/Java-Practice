@@ -10,3 +10,14 @@ https://docs.oracle.com/en/java/javase/12/books.html
 split()函数是根据参数如",", "-", " "等, 分割String字符串 
 trim() 函数是去掉String字符串的首尾空格
 https://docs.oracle.com/javase/6/docs/api/java/lang/String.html
+
+
+建立双向链表，插入结点，删除节点
+
+二叉链表
+class Node{
+		T data;
+		Node left;
+		Node right;
+	}
+
