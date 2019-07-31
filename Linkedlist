@@ -3,6 +3,10 @@ node of loop in a linked list
 
 Remove Nth Node From End of List
 
+链表逆置
+using Collections class: Collections is a class in java.util package which contains various static methods for searching,
+sorting, reversing, finding max, min….etc. We can make use of the In-built Collections.reverse() method for reversing 
+an linked list. It takes a list as an input parameter and returns the reversed list.
 
 https://docs.oracle.com/en/java/javase/12/books.html
 
@@ -20,4 +24,11 @@ class Node{
 		Node left;
 		Node right;
 	}
+
+
+
+
+
+
+
 
