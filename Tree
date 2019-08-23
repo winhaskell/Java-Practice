@@ -2,6 +2,8 @@
 
 二叉树最大路径和
 
+二叉树的遍历
+
 class Node 
 { 
     int data; 
@@ -110,6 +112,8 @@ https://www.javagists.com/java-tree-data-structure
 
 https://www.cnblogs.com/ysocean/p/8032642.html
 
+
+二叉树的最小深度
 
 
 
