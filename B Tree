@@ -1,0 +1,46 @@
+B-Tree
+
+http://opendatastructures.org/ods-java/14_2_B_Trees.html
+https://whatisdbms.com/b-tree-indexing-in-dbms/
+https://use-the-index-luke.com/sql/anatomy/the-tree
+
+
+public class Btree {
+    private int[] keys;
+    private Btree[] subs;
+    private int order;
+
+public Btree (int n) {
+    keys = new int[n-1];
+    subs = new Btree[n];
+    order = n;
+  }
+
+private boolean leaf () {
+   for (int i=0;i<order;i++)
+      if (subs[i] != null)
+	   {
+       return false;
+     };
+       return true;
+     }
+
+  private boolean full () 
+  {
+   for (int i=0;i<order;i++)
+      if (subs[i] == null)
+	      {return false;};
+   return true;
+  }  
+}
+
+
+
+
+
+
+
+
+
+
+
