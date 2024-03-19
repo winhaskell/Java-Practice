@@ -1,0 +1,40 @@
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+import javax.swing.JFrame;
+import javax.swing.JTextArea;
+
+// 创建了一个简单的窗口，并在窗口中显示一个文本区域。用户按下或释放键盘上的键时，程序会在文本区域中显示相应的消息。
+
+public class KeyboardEventDemo extends JFrame implements KeyListener {
+   
+    private JTextArea textArea;
+    
+    public KeyboardEventDemo() {
+        setTitle("Keyboard Event Demo");
+        textArea = new JTextArea();
+        textArea.addKeyListener(this);
+        add(textArea);
+        setSize(400, 300);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setVisible(true);
+    }
+
+    @Override
+    public void keyPressed(KeyEvent e) {
+        textArea.append("Key Pressed: " + KeyEvent.getKeyText(e.getKeyCode()) + "\n");
+    }
+
+    @Override
+    public void keyReleased(KeyEvent e) {
+        textArea.append("Key Released: " + KeyEvent.getKeyText(e.getKeyCode()) + "\n");
+    }
+
+    @Override
+    public void keyTyped(KeyEvent e) {
+        // Not used in this example
+    }
+
+    public static void main(String[] args) {
+        new KeyboardEventDemo();
+    }
+}
