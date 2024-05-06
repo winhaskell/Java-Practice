@@ -1,0 +1,29 @@
+Exception Handling
+
+异常处理（Exception Handling）是Java中的一个关键概念，旨在处理程序运行时可能出现的错误或异常。Java通过try-catch和finally块来处理异常。
+
+try {
+    // 可能产生异常的代码
+} catch (ExceptionType e) {
+    // 处理异常的代码
+} finally {
+    // 无论是否发生异常都会执行的代码
+}
+
+
+public class ExceptionHandlingExample {
+    public static void main(String[] args) {
+        try {
+            int result = 10 / 0; // 这将引发 ArithmeticException
+        } catch (ArithmeticException e) {
+            System.out.println("Caught an ArithmeticException: " + e.getMessage());
+        } finally {
+            System.out.println("This block always executes.");
+        }
+    }
+}
+
+
+
+
+
