@@ -1,0 +1,63 @@
+Multithreading
+
+多线程（Multithreading）允许在一个程序中同时运行多个线程，从而提高效率和性能。在Java中，Thread类和Runnable接口是多线程编程的核心。
+
+
+// 使用Thread类
+Thread t1 = new Thread(() -> {
+    // 线程要执行的代码
+});
+
+t1.start(); // 启动线程
+
+// 使用Runnable接口
+Runnable runnableTask = new Runnable() {
+    @Override
+    public void run() {
+        // 线程要执行的代码
+    }
+};
+
+Thread t2 = new Thread(runnableTask);
+t2.start();
+
+
+
+public class MultiThreadingExample {
+    public static void main(String[] args) {
+        // 创建第一个线程
+        Thread t1 = new Thread(() -> {
+            for (int i = 0; i < 5; i++) {
+                System.out.println("Thread 1: " + i);
+                try {
+                    Thread.sleep(500); // 暂停500毫秒
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        // 创建第二个线程
+        Thread t2 = new Thread(() -> {
+            for (int i = 0; i < 5; i++) {
+                System.out.println("Thread 2: " + i);
+                try {
+                    Thread.sleep(500); // 暂停500毫秒
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        // 启动线程
+        t1.start();
+        t2.start();
+    }
+}
+
+
+两个线程同时运行，并输出它们的计数值。
+多线程可以提高程序的效率，但也带来了一些挑战，如线程同步、竞态条件等，因此需要小心处理。
+
+
+
